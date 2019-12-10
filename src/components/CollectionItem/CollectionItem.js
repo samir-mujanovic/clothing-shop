@@ -12,7 +12,7 @@ const CollectionItem = ({ id, name, price, imageUrl }) => {
             backgroundImage: `url(${imageUrl})`
           }}
         />
-        <div className="collection-footer d-flex justify-content-between">
+        <div className="collection-footer d-flex">
           <span className="name">{name}</span>
           <span className="price">${price + ".00"}</span>
         </div>

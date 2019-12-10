@@ -28,7 +28,7 @@ class homepage extends React.Component {
             subtitle="Freegan actually brunch, lumbersexual fanny pack aesthetic tbh tofu
         cardigan yr quinoa hot chicken bushwick normcore."
           />
-          <div className="container">
+          <div className="container spacing">
             {collections
               .filter(item => item.title === "Womens" || item.title === "Mens")
               .map(({ id, ...otherCollectionProps }) => {

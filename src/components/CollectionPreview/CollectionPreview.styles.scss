@@ -1,3 +1,25 @@
 .spacing:not(:first-child) {
   margin-top: 50px;
 }
+.collection-preview {
+  h3 {
+    position: relative;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #000;
+    letter-spacing: 1px;
+    font-family: "Playfair Display", serif;
+
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: -25%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 40px;
+      height: 3px;
+      background-color: #41a28e;
+    }
+  }
+}

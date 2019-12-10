@@ -8,7 +8,7 @@ const CollectionPreview = ({ title, items }) => {
   return (
     <div className="row spacing">
       <div className="col-12 collection-preview">
-        <h1>{title}</h1>
+        <h3>{title}</h3>
         <div className="row preview">
           {items
             .filter((item, index) => index < 4)

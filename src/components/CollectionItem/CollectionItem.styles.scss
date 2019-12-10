@@ -4,4 +4,17 @@
     background-size: cover;
     background-repeat: no-repeat;
   }
+  .collection-footer {
+    margin-top: 15px;
+    justify-content: space-between;
+    align-items: center;
+    span {
+      font-family: "Playfair Display", serif;
+      color: #000;
+      font-size: 16px;
+    }
+    span:not(:first-child) {
+      font-family: "Roboto", sans-serif;
+    }
+  }
 }
