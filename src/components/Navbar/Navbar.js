@@ -67,7 +67,7 @@ const Navbar = () => {
               <li className="nav-item">
                 <NavLink to="/contact" className="cart">
                   <Cart />
-                  <span className="cart-items">1</span>
+                  <span className="cart-items">0</span>
                 </NavLink>
               </li>
             </ul>

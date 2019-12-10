@@ -1,7 +1,7 @@
 import React from "react";
 
 import Directory from "../../components/Directory/Directory";
-import FeaturedProducts from "../../components/FeaturedProducts/FeaturedProducts";
+import FeaturedPrevew from "../../components/FeaturedPreview/FeaturedPrevew";
 
 const homepage = () => {
   return (
@@ -9,7 +9,7 @@ const homepage = () => {
       <div className="container-fluid p-0">
         <Directory />
       </div>
-      <FeaturedProducts />
+      <FeaturedPrevew />
     </section>
   );
 };
