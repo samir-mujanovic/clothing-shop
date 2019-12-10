@@ -2,4 +2,29 @@ nav {
   .navbar-toggler:focus {
     outline: none;
   }
+  .navbar-brand {
+    color: #000 !important;
+    font-size: 25px;
+    font-family: "Yeseva One", cursive;
+  }
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        font-size: 13px;
+        font-weight: 400;
+        letter-spacing: 1px;
+        transition: all 0.3s ease-out;
+        text-transform: uppercase;
+        color: #000;
+        &:hover {
+          color: #41a28e;
+        }
+      }
+    }
+    .active {
+      .nav-link {
+        color: #41a28e !important;
+      }
+    }
+  }
 }
