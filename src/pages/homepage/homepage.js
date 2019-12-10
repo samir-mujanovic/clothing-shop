@@ -1,7 +1,7 @@
 import React from "react";
 
-import Directory from "../components/Directory/Directory";
-import FeaturedProducts from "../components/FeaturedProducts/FeaturedProducts";
+import Directory from "../../components/Directory/Directory";
+import FeaturedProducts from "../../components/FeaturedProducts/FeaturedProducts";
 
 const homepage = () => {
   return (

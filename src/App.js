@@ -2,9 +2,9 @@ import React from "react";
 import { Switch, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar/Navbar";
-import Homepage from "./pages/homepage";
+import Homepage from "./pages/homepage/homepage";
 import AboutUs from "./pages/about";
-import Shop from "./pages/shop";
+import Shop from "./pages/shop/shop";
 import Contact from "./pages/contact";
 
 import "./App.styles.scss";

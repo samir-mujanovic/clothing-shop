@@ -10,19 +10,19 @@ class Directory extends React.Component {
       sections: [
         {
           title: "Hats",
-          imageUrl: "https://i.ibb.co/hgNNYbC/hero-1.jpg",
+          imageUrl: "./assets/img/hero-1.jpg",
           id: 1,
           linkUrl: "shop/hats"
         },
         {
           title: "Jackets",
-          imageUrl: "https://i.ibb.co/gdBHJqH/hero-2.jpg",
+          imageUrl: "./assets/img/hero-2.jpg",
           id: 2,
           linkUrl: "shop/jackets"
         },
         {
           title: "Sneakers",
-          imageUrl: "https://i.ibb.co/Y3fnQ3Q/hero-3.jpg",
+          imageUrl: "./assets/img/hero-3.jpg",
           id: 3,
           linkUrl: "shop/sneakers"
         }

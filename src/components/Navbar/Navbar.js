@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import "./Navbar.styles.scss";
 
@@ -14,9 +14,9 @@ const Navbar = () => {
     <header>
       <nav className="navbar navbar-expand-md navbar-dark fixed-top">
         <div className="container">
-          <Link to="/" className="navbar-brand">
+          <NavLink to="/" className="navbar-brand">
             New Vision
-          </Link>
+          </NavLink>
           <button
             className={`navbar-toggler ${toggler ? "" : "collapsed"}`}
             onClick={togglerHandler}
@@ -25,25 +25,37 @@ const Navbar = () => {
           </button>
           <div className={`collapse navbar-collapse ${toggler ? "show" : ""}`}>
             <ul className="navbar-nav ml-auto">
-              <li className="nav-item active">
-                <Link to="/" className="nav-link">
+              <li className="nav-item">
+                <NavLink activeClassName="active" to="/" className="nav-link">
                   Home
-                </Link>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <Link to="/about" className="nav-link">
+                <NavLink
+                  activeClassName="active"
+                  to="/about"
+                  className="nav-link"
+                >
                   About Us
-                </Link>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <Link to="/shop" className="nav-link">
+                <NavLink
+                  activeClassName="active"
+                  to="/shop"
+                  className="nav-link"
+                >
                   Shop
-                </Link>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <Link to="/contact" className="nav-link">
+                <NavLink
+                  activeClassName="active"
+                  to="/contact"
+                  className="nav-link"
+                >
                   Contact
-                </Link>
+                </NavLink>
               </li>
             </ul>
           </div>
