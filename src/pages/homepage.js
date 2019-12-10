@@ -1,21 +1,15 @@
 import React from "react";
 
+import Directory from "../components/Directory/Directory";
+import FeaturedProducts from "../components/FeaturedProducts/FeaturedProducts";
+
 const homepage = () => {
   return (
-    <section className="hero-section">
-      <div className="container-fluid">
-        <div className="row no-gutters">
-          <div className="col-12 col-md-4">
-            <h1>Hats</h1>
-          </div>
-          <div className="col-12 col-md-4">
-            <h1>Jackets</h1>
-          </div>
-          <div className="col-12 col-md-4">
-            <h1>Sneakers</h1>
-          </div>
-        </div>
+    <section className="home">
+      <div className="container-fluid p-0">
+        <Directory />
       </div>
+      <FeaturedProducts />
     </section>
   );
 };

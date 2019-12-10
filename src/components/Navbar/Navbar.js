@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <Router>
       <header>
-        <nav className="navbar navbar-expand-md navbar-dark">
+        <nav className="navbar navbar-expand-md navbar-dark fixed-top">
           <div className="container">
             <Link to="/" className="navbar-brand">
               New Vision
