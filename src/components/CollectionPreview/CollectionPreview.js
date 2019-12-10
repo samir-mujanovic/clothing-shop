@@ -6,7 +6,7 @@ import "./CollectionPreview.styles.scss";
 
 const CollectionPreview = ({ title, items }) => {
   return (
-    <div className="row">
+    <div className="row spacing">
       <div className="col-12 collection-preview">
         <h1>{title}</h1>
         <div className="row preview">

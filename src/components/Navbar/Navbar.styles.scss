@@ -10,6 +10,7 @@ nav {
     font-family: "Yeseva One", cursive;
   }
   .navbar-nav {
+    align-items: center;
     .nav-item {
       .nav-link {
         font-size: 13px;
@@ -24,6 +25,28 @@ nav {
       }
       .active {
         color: #41a28e !important;
+      }
+      .cart {
+        margin-left: 10px;
+        position: relative;
+        svg {
+          width: 25px;
+          height: 25px;
+        }
+        .cart-items {
+          position: absolute;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          top: -70%;
+          right: -30%;
+          width: 20px;
+          height: 20px;
+          background-color: #41a28e;
+          border-radius: 50%;
+          color: #fff;
+          font-size: 11px;
+        }
       }
     }
   }

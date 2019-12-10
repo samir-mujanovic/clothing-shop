@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
+import { ReactComponent as Cart } from "../../assets/shopping-cart.svg";
+
 import "./Navbar.styles.scss";
 
 const Navbar = () => {
@@ -26,7 +28,12 @@ const Navbar = () => {
           <div className={`collapse navbar-collapse ${toggler ? "show" : ""}`}>
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
-                <NavLink activeClassName="active" to="/" className="nav-link">
+                <NavLink
+                  exact
+                  activeClassName="active"
+                  to="/"
+                  className="nav-link"
+                >
                   Home
                 </NavLink>
               </li>
@@ -55,6 +62,12 @@ const Navbar = () => {
                   className="nav-link"
                 >
                   Contact
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink to="/contact" className="cart">
+                  <Cart />
+                  <span className="cart-items">1</span>
                 </NavLink>
               </li>
             </ul>

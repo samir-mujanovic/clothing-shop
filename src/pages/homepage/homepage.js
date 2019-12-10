@@ -5,7 +5,7 @@ import FeaturedProducts from "../../components/FeaturedProducts/FeaturedProducts
 
 const homepage = () => {
   return (
-    <section className="home">
+    <section className="home-page">
       <div className="container-fluid p-0">
         <Directory />
       </div>
