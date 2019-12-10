@@ -1,8 +1,9 @@
 import React from "react";
+import { withRouter } from "react-router-dom";
 
 import "./MenuItem.styles.scss";
 
-const MenuItem = ({ title, imageUrl }) => {
+const MenuItem = ({ title, imageUrl, history, linkUrl, match }) => {
   return (
     <div className="col-12 col-md-4">
       <div className="wrapper-box">
@@ -14,7 +15,12 @@ const MenuItem = ({ title, imageUrl }) => {
         >
           <div className="hero-info-block">
             <h4>{title}</h4>
-            <button className="btn green-btn">Shop Now</button>
+            <button
+              onClick={() => history.push(`${match.url$}${linkUrl}`)}
+              className="btn green-btn"
+            >
+              Shop Now
+            </button>
           </div>
         </div>
       </div>
@@ -22,4 +28,4 @@ const MenuItem = ({ title, imageUrl }) => {
   );
 };
 
-export default MenuItem;
+export default withRouter(MenuItem);

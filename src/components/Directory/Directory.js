@@ -32,8 +32,8 @@ class Directory extends React.Component {
   render() {
     return (
       <div className="row no-gutters">
-        {this.state.sections.map(({ title, imageUrl, id }) => {
-          return <MenuItem key={id} title={title} imageUrl={imageUrl} />;
+        {this.state.sections.map(({ id, ...otherSectionsProps }) => {
+          return <MenuItem key={id} {...otherSectionsProps} />;
         })}
       </div>
     );
