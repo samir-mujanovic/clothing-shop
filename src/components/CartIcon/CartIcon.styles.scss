@@ -1,0 +1,24 @@
+.cart-icon {
+  margin-left: 10px;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  svg {
+    width: 25px;
+    height: 25px;
+  }
+  .cart-items {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -40%;
+    right: -30%;
+    width: 18px;
+    height: 18px;
+    background-color: #41a28e;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 10px;
+  }
+}

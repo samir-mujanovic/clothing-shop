@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { connect } from "react-redux";
 
-import { ReactComponent as Cart } from "../../assets/shopping-cart.svg";
+import CartIcon from "../CartIcon/CartIcon";
+import CartDropdown from "../CartDropdown/CartDropdown";
 
 import "./Navbar.styles.scss";
 
-const Navbar = () => {
+const Navbar = ({ hidden }) => {
   const [toggler, setToggler] = useState(false);
 
   const togglerHandler = () => {
@@ -64,13 +66,9 @@ const Navbar = () => {
                   Contact
                 </NavLink>
               </li>
-              <li className="nav-item">
-                <NavLink to="/contact" className="cart">
-                  <Cart />
-                  <span className="cart-items">0</span>
-                </NavLink>
-              </li>
             </ul>
+            <CartIcon />
+            {hidden ? null : <CartDropdown />}
           </div>
         </div>
       </nav>
@@ -78,4 +76,8 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+const mapStateToProps = ({ cart: { hidden } }) => ({
+  hidden
+});
+
+export default connect(mapStateToProps)(Navbar);
