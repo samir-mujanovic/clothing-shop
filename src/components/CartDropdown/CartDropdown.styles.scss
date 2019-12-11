@@ -8,6 +8,8 @@
   border-top: 1px solid #e5e5e5;
   padding: 30px;
   text-align: left;
+  max-height: 300px;
+  overflow-y: auto;
   z-index: 1000;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -17,6 +19,7 @@
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.05);
   button {
     width: 100%;
+    margin-top: auto;
     &:hover {
       background-color: #000;
       color: #fff;
