@@ -6,6 +6,7 @@ import Homepage from "./pages/homepage/homepage";
 import AboutUs from "./pages/about";
 import Shop from "./pages/shop/shop";
 import Contact from "./pages/contact";
+import Checkout from "./pages/checkout/checkout";
 
 import "./App.styles.scss";
 
@@ -18,6 +19,7 @@ function App() {
         <Route path="/about" component={AboutUs} />
         <Route path="/shop" component={Shop} />
         <Route path="/contact" component={Contact} />
+        <Route exact path="/checkout" component={Checkout} />
       </Switch>
     </div>
   );

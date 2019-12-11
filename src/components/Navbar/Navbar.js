@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { connect } from "react-redux";
+import { createStructuredSelector } from "reselect";
 
 import CartIcon from "../CartIcon/CartIcon";
 import CartDropdown from "../CartDropdown/CartDropdown";
+import { selectCartHidden } from "../../redux/cart/cart-selectors";
 
 import "./Navbar.styles.scss";
 
@@ -76,8 +78,8 @@ const Navbar = ({ hidden }) => {
   );
 };
 
-const mapStateToProps = ({ cart: { hidden } }) => ({
-  hidden
+const mapStateToProps = createStructuredSelector({
+  hidden: selectCartHidden
 });
 
 export default connect(mapStateToProps)(Navbar);
