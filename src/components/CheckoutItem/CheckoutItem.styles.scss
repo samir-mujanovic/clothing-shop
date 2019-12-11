@@ -23,7 +23,18 @@
   }
 
   .quantity {
-    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    .arrow {
+      cursor: pointer;
+      svg {
+        width: 11px;
+      }
+    }
+
+    .value {
+      margin: 0 20px;
+    }
   }
 
   .remove-button {
