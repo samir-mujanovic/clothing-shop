@@ -1,6 +1,6 @@
 import React from "react";
 
-import SHOP_DATA from "../shop/shop.data";
+import SHOP_DATA from "../../redux/shop/shop.data";
 
 import Directory from "../../components/Directory/Directory";
 import CollectionPreview from "../../components/CollectionPreview/CollectionPreview";
