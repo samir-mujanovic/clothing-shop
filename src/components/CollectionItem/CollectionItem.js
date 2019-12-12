@@ -9,7 +9,7 @@ import "./CollectionItem.styles.scss";
 const CollectionItem = ({ item, addItem }) => {
   const { name, price, imageUrl } = item;
   return (
-    <div className="col-12 col-md-3">
+    <div className="col-12 col-md-3 mt-5">
       <div className="collection-item">
         <div
           className="image"
