@@ -1,12 +1,21 @@
+.wrapp-shop {
+  padding: 80px 0;
+}
+
 .spacing:not(:first-child) {
   margin-top: 50px;
 }
 .collection-preview {
+  .category-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px dotted #dedede;
+  }
   h3 {
     position: relative;
     font-size: 30px;
     text-align: center;
-    margin-bottom: 30px;
     color: #000;
     letter-spacing: 1px;
     font-family: "Playfair Display", serif;
@@ -15,11 +24,28 @@
       content: "";
       position: absolute;
       bottom: -25%;
-      left: 50%;
-      transform: translateX(-50%);
+      left: 0;
       width: 40px;
       height: 3px;
       background-color: #41a28e;
+    }
+  }
+  .view-more {
+    font-size: 13px;
+    text-transform: capitalize;
+    display: flex;
+    margin: 0;
+    cursor: pointer;
+    span {
+      margin: 0 20px 0 0;
+      text-transform: uppercase;
+      transition: all 0.2s ease-out;
+    }
+    &:hover {
+      span {
+        margin: 0 15px 0 0;
+        color: #41a28e;
+      }
     }
   }
 }

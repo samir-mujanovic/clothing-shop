@@ -1,44 +1,74 @@
-.checkout-item {
-  width: 100%;
-  display: flex;
-  min-height: 100px;
-  border-bottom: 1px solid darkgrey;
-  padding: 15px 0;
-  font-size: 20px;
-  align-items: center;
-
-  .image-container {
-    width: 23%;
-    padding-right: 15px;
-
-    img {
-      width: 100%;
-      height: 100%;
+tbody {
+  tr {
+    border: 0;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  .table-row {
+    th {
+      vertical-align: middle;
     }
-  }
-  .name,
-  .quantity,
-  .price {
-    width: 23%;
-  }
-
-  .quantity {
-    display: flex;
-    align-items: center;
-    .arrow {
-      cursor: pointer;
-      svg {
-        width: 11px;
+    .image-block {
+      width: 133px;
+      img {
+        width: 100%;
+        height: 100%;
       }
     }
-
-    .value {
-      margin: 0 20px;
+    .name-block {
+      font-family: "Playfair Display", serif;
+      color: #000;
+      font-weight: 400;
+      font-size: 18px;
     }
-  }
-
-  .remove-button {
-    padding-left: 12px;
-    cursor: pointer;
+    .price-block {
+      font-weight: 400;
+      color: #666;
+      font-size: 14px;
+    }
+    .quantity-wrapp {
+      .quantity-block {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        .value {
+          margin: 0 24px 0 0;
+          border: 1px solid #e5e5e5;
+          border-right: none;
+          height: 48px;
+          width: 48px;
+          text-align: center;
+          line-height: 48px;
+          display: block;
+          font-weight: 400;
+          color: #666;
+        }
+        .arrow {
+          position: absolute;
+          right: 0;
+          width: 24px;
+          height: 24px;
+          line-height: 21px;
+          border: 1px solid #e5e5e5;
+          text-align: center;
+          font-weight: 100;
+          cursor: pointer;
+          svg {
+            width: 10px;
+            height: 10px;
+          }
+        }
+        .top {
+          top: 0;
+          border-bottom: none;
+        }
+        .bottom {
+          bottom: 0;
+        }
+      }
+    }
+    .remove-button {
+      margin-left: 20px;
+      cursor: pointer;
+    }
   }
 }

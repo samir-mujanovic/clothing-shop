@@ -1,13 +1,14 @@
 nav {
   background-color: #fff !important;
   border-bottom: 1px solid rgb(239, 239, 239);
+  padding: 0.6rem 1rem;
   .navbar-toggler:focus {
     outline: none;
   }
   .navbar-brand {
     color: #000 !important;
     font-size: 30px;
-    font-family: "Yeseva One", cursive;
+    font-family: "Girassol", cursive;
   }
   .navbar-collapse {
     position: relative;
@@ -16,8 +17,8 @@ nav {
     align-items: center;
     .nav-item {
       .nav-link {
-        font-size: 13px;
-        font-weight: 400;
+        font-size: 14px;
+        font-weight: 500;
         letter-spacing: 1px;
         transition: all 0.3s ease-out;
         text-transform: uppercase;

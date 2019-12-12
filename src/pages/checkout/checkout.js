@@ -13,29 +13,32 @@ import "./checkout.styles.scss";
 
 const CheckoutPage = ({ cartItems, total }) => {
   return (
-    <div className="checkout-page">
-      <div className="checkout-header">
-        <div className="header-block">
-          <span>Product</span>
+    <div className="container">
+      <div className="checkout-page">
+        <div className="table-responsive">
+          <table
+            className="table"
+            style={{
+              width: "100%"
+            }}
+          >
+            <thead>
+              <tr>
+                <th>Product</th>
+                <th>Descriptiont</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Remove</th>
+              </tr>
+            </thead>
+            {cartItems.map(cartItem => (
+              <CheckoutItem key={cartItem.id} cartItem={cartItem} />
+            ))}
+          </table>
         </div>
-        <div className="header-block">
-          <span>Description</span>
+        <div className="total">
+          <span>Total: ${total}</span>
         </div>
-        <div className="header-block">
-          <span>Quantity</span>
-        </div>
-        <div className="header-block">
-          <span>Price</span>
-        </div>
-        <div className="header-block">
-          <span>Remove</span>
-        </div>
-      </div>
-      {cartItems.map(cartItem => (
-        <CheckoutItem key={cartItem.id} cartItem={cartItem} />
-      ))}
-      <div className="total">
-        <span>Total: ${total}</span>
       </div>
     </div>
   );

@@ -1,6 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
-import { FaPlus, FaMinus } from "react-icons/fa";
+import { ReactComponent as Plus } from "../../assets/plus.svg";
+import { ReactComponent as Minus } from "../../assets/minus.svg";
 
 import {
   clearItemFromCart,
@@ -13,25 +14,39 @@ import "./CheckoutItem.styles.scss";
 const CheckoutItem = ({ cartItem, clearItem, addItem, removeItem }) => {
   const { name, imageUrl, price, quantity } = cartItem;
   return (
-    <div className="checkout-item">
-      <div className="image-container">
-        <img src={imageUrl} alt={name} />
-      </div>
-      <span className="name">{name}</span>
-      <span className="quantity">
-        <div className="arrow" onClick={() => removeItem(cartItem)}>
-          <FaMinus />
-        </div>
-        <span className="value">{quantity}</span>
-        <div className="arrow" onClick={() => addItem(cartItem)}>
-          <FaPlus />
-        </div>
-      </span>
-      <span className="price">${price}</span>
-      <div className="remove-button" onClick={() => clearItem(cartItem)}>
-        &#10005;
-      </div>
-    </div>
+    <tbody>
+      <tr className="table-row">
+        <th>
+          <div className="image-block">
+            <img src={imageUrl} alt={name} />
+          </div>
+        </th>
+        <th>
+          <div className="name-block">{name}</div>
+        </th>
+        <th>
+          <div className="quantity-wrapp">
+            <div className="quantity-block">
+              <div className="arrow top" onClick={() => removeItem(cartItem)}>
+                <Minus />
+              </div>
+              <span className="value">{quantity}</span>
+              <div className="arrow bottom" onClick={() => addItem(cartItem)}>
+                <Plus />
+              </div>
+            </div>
+          </div>
+        </th>
+        <th>
+          <div className="price-block">${price + ".00"}</div>
+        </th>
+        <th>
+          <div className="remove-button" onClick={() => clearItem(cartItem)}>
+            &#10005;
+          </div>
+        </th>
+      </tr>
+    </tbody>
   );
 };
 

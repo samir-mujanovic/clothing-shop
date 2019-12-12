@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 
 import CollectionPreview from "../CollectionPreview/CollectionPreview";
+import HeadingBlock from "../HeadingBlock/HeadingBlock";
 
 import { selectCollectionsForPreview } from "../../redux/shop/shop.selectors";
 
@@ -11,9 +12,12 @@ import "./CollectionOverview.styles.scss";
 const CollectionOverview = ({ collections }) => {
   return (
     <div className="collections-overview">
-      {collections.map(({ id, ...otherCollectionProps }) => (
-        <CollectionPreview key={id} {...otherCollectionProps} />
-      ))}
+      <HeadingBlock title="Shop" />
+      <div className="container spacing-container">
+        {collections.map(({ id, ...otherCollectionProps }) => (
+          <CollectionPreview key={id} {...otherCollectionProps} />
+        ))}
+      </div>
     </div>
   );
 };
