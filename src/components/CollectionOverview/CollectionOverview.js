@@ -11,14 +11,16 @@ import "./CollectionOverview.styles.scss";
 
 const CollectionOverview = ({ collections }) => {
   return (
-    <div className="collections-overview">
+    <>
       <HeadingBlock title="Shop" />
-      <div className="container spacing-container">
-        {collections.map(({ id, ...otherCollectionProps }) => (
-          <CollectionPreview key={id} {...otherCollectionProps} />
-        ))}
+      <div className="collections-overview">
+        <div className="container">
+          {collections.map(({ id, ...otherCollectionProps }) => (
+            <CollectionPreview key={id} {...otherCollectionProps} />
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

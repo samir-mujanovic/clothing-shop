@@ -11,16 +11,18 @@ import "./collection.styles.scss";
 const CollectionPage = ({ collection }) => {
   const { title, items } = collection;
   return (
-    <div className="collection-page">
+    <>
       <HeadingBlock title={title} />
-      <div className="container spacing-container">
-        <div className="row items">
-          {items.map(item => (
-            <Collectionitem key={item.id} item={item} />
-          ))}
+      <div className="collection-page">
+        <div className="container">
+          <div className="row items">
+            {items.map(item => (
+              <Collectionitem key={item.id} item={item} />
+            ))}
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
