@@ -6,7 +6,7 @@ import CustomButton from "../CustomButton/CustomButton";
 import "./MenuItem.styles.scss";
 
 const MenuItem = ({ title, imageUrl, history, linkUrl, match }) => {
-  const redirect = () => history.push(`${match.url$}${linkUrl}`);
+  const redirect = () => history.push(`${match.url}${linkUrl}`);
 
   return (
     <div className="col-12 col-md-4">
