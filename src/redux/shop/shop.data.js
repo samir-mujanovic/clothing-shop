@@ -3,6 +3,7 @@ const SHOP_DATA = {
     id: 1,
     title: "Hats",
     routeName: "hats",
+    linkUrl: "shop/hats",
     items: [
       {
         id: 1,
@@ -73,6 +74,7 @@ const SHOP_DATA = {
     id: 2,
     title: "Sneakers",
     routeName: "sneakers",
+    linkUrl: "shop/sneakers",
     items: [
       {
         id: 10,
@@ -136,6 +138,7 @@ const SHOP_DATA = {
     id: 3,
     title: "Jackets",
     routeName: "jackets",
+    linkUrl: "shop/jackets",
     items: [
       {
         id: 18,
@@ -178,6 +181,7 @@ const SHOP_DATA = {
     id: 4,
     title: "Womens",
     routeName: "womens",
+    linkUrl: "shop/womens",
     items: [
       {
         id: 23,
@@ -234,6 +238,7 @@ const SHOP_DATA = {
     id: 5,
     title: "Mens",
     routeName: "mens",
+    linkUrl: "shop/mens",
     items: [
       {
         id: 30,
