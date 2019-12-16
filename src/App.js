@@ -7,7 +7,7 @@ import FooterSection from "./components/Footer/FooterSection";
 import Homepage from "./pages/homepage/homepage";
 import AboutUs from "./pages/about/about";
 import Shop from "./pages/shop/shop";
-import Contact from "./pages/contact";
+import Contact from "./pages/contact/contact";
 import Checkout from "./pages/checkout/checkout";
 
 import "./App.styles.scss";
