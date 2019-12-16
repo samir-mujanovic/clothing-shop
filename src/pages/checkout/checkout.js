@@ -41,11 +41,11 @@ const CheckoutPage = ({ cartItems, total }) => {
             </table>
           </div>
           <div className="cuopon-form mt-4">
-            <form className="form-inline">
-              <div className="form-group mr-sm-3 mb-2">
+            <form className="form-inline checkout-form">
+              <div className="form-group mr-sm-3">
                 <label className="sr-only">Password</label>
                 <input
-                  type="password"
+                  type="text"
                   className="form-control"
                   placeholder="Coupon code"
                 />
@@ -53,8 +53,9 @@ const CheckoutPage = ({ cartItems, total }) => {
               <CustomButon title="Apply Coupon" />
             </form>
           </div>
-          <div className="total mt-5">
-            <span>Total: ${total}</span>
+          <div className="total mt-5 d-flex align-items-center">
+            <h2 className="mr-5">Cart Totals:</h2>
+            <span>${total + ".00"}</span>
           </div>
         </div>
       </div>
