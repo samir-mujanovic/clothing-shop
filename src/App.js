@@ -5,7 +5,7 @@ import Navbar from "./components/Navbar/Navbar";
 import FooterSection from "./components/Footer/FooterSection";
 
 import Homepage from "./pages/homepage/homepage";
-import AboutUs from "./pages/about";
+import AboutUs from "./pages/about/about";
 import Shop from "./pages/shop/shop";
 import Contact from "./pages/contact";
 import Checkout from "./pages/checkout/checkout";
