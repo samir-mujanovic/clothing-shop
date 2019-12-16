@@ -1,0 +1,39 @@
+.footer {
+  background-color: #000;
+  padding: 80px 0;
+  .footer-links {
+    h5 {
+      color: #fff;
+      font-family: "Playfair Display", serif;
+      margin: 0 0 24px;
+      font-size: 20px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      li {
+        margin: 10px 0;
+        color: #999;
+        font-size: 14px;
+        letter-spacing: 1px;
+        cursor: pointer;
+        &:hover {
+          color: #41a28e;
+        }
+        svg {
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+}
+.copy-right {
+  background-color: #111;
+  padding: 30px 0;
+  p {
+    color: #999;
+    margin-bottom: 0;
+    letter-spacing: 1px;
+    font-size: 16px;
+  }
+}

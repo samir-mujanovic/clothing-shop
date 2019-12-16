@@ -2,6 +2,8 @@ import React from "react";
 import { Switch, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar/Navbar";
+import FooterSection from "./components/Footer/FooterSection";
+
 import Homepage from "./pages/homepage/homepage";
 import AboutUs from "./pages/about";
 import Shop from "./pages/shop/shop";
@@ -21,6 +23,7 @@ function App() {
         <Route path="/contact" component={Contact} />
         <Route exact path="/checkout" component={Checkout} />
       </Switch>
+      <FooterSection />
     </div>
   );
 }
