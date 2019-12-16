@@ -30,15 +30,16 @@
   }
   .collection-footer {
     margin-top: 15px;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
     span {
       font-family: "Playfair Display", serif;
       color: #000;
-      font-size: 16px;
+      font-size: 18px;
     }
     span:not(:first-child) {
       font-family: "Roboto", sans-serif;
+      margin-top: 10px;
+      font-size: 15px;
     }
   }
 }

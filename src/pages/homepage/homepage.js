@@ -6,6 +6,7 @@ import { selectCollectionsForPreview } from "../../redux/shop/shop.selectors";
 import Directory from "../../components/Directory/Directory";
 import CollectionPreview from "../../components/CollectionPreview/CollectionPreview";
 import HeadingTitle from "../../components/HeadingTitle/HeadingTitle";
+import CustomButton from "../../components/CustomButton/CustomButton";
 
 import "./homepage.styles.scss";
 
@@ -17,7 +18,7 @@ const HomePage = ({ collections }) => {
       </div>
       <div className="featured-section">
         <HeadingTitle
-          title="Featured Products"
+          title="Popular Products"
           subtitle="Freegan actually brunch, lumbersexual fanny pack aesthetic tbh tofu
       cardigan yr quinoa hot chicken bushwick normcore."
         />
@@ -28,6 +29,16 @@ const HomePage = ({ collections }) => {
               return <CollectionPreview key={id} {...otherCollectionProps} />;
             })}
         </div>
+      </div>
+      <div
+        className="parallax-section"
+        style={{
+          backgroundImage: `url("./assets/img/home-parallax.jpg")`
+        }}
+      >
+        <h5>The Chloe Collection</h5>
+        <h2>The Project Fashion</h2>
+        <CustomButton title="More Info" />
       </div>
     </section>
   );

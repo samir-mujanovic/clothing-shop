@@ -78,6 +78,13 @@ const Footer = () => {
               </div>
             </div>
           </div>
+          <div className="payment-img">
+            <img
+              src="./assets/footer-image-1.png"
+              alt="payment img"
+              className="img-fluid"
+            />
+          </div>
         </div>
       </section>
       <div className="copy-right">
