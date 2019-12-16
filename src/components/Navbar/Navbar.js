@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 
+import { ReactComponent as Menu } from "../../assets/menu.svg";
 import CartIcon from "../CartIcon/CartIcon";
 import CartDropdown from "../CartDropdown/CartDropdown";
 import { selectCartHidden } from "../../redux/cart/cart-selectors";
@@ -27,7 +28,7 @@ const Navbar = ({ hidden }) => {
             className={`navbar-toggler ${toggler ? "" : "collapsed"}`}
             onClick={togglerHandler}
           >
-            <span className="navbar-toggler-icon"></span>
+            <Menu style={{ width: "30" }} />
           </button>
           <div className={`collapse navbar-collapse ${toggler ? "show" : ""}`}>
             <ul className="navbar-nav ml-auto">

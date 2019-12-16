@@ -16,7 +16,7 @@ const Footer = () => {
         <div className="container">
           <div className="row">
             <div className="col-12 col-md-3">
-              <div className="footer-links">
+              <div className="footer-links text-center text-md-left">
                 <h5>Customer Services</h5>
                 <ul className="links">
                   <li>Contact Us</li>
@@ -28,7 +28,7 @@ const Footer = () => {
               </div>
             </div>
             <div className="col-12 col-md-3">
-              <div className="footer-links">
+              <div className="footer-links text-center text-md-left mt-4 mt-md-0">
                 <h5>Customer Assistance</h5>
                 <ul className="links">
                   <li>Track My Orders</li>
@@ -40,7 +40,7 @@ const Footer = () => {
               </div>
             </div>
             <div className="col-12 col-md-3">
-              <div className="footer-links">
+              <div className="footer-links text-center text-md-left mt-4 mt-md-0">
                 <h5>Follow New Vision</h5>
                 <ul className="links">
                   <li>
@@ -67,7 +67,7 @@ const Footer = () => {
               </div>
             </div>
             <div className="col-12 col-md-3">
-              <div className="footer-links company-info">
+              <div className="footer-links company-info text-center text-md-left mt-4 mt-md-0">
                 <h5>Contact Info</h5>
                 <ul>
                   <li>Address: 79 Grant Street, NY 10950</li>

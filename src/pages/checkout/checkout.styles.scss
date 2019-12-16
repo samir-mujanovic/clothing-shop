@@ -54,10 +54,26 @@
       font-family: "Playfair Display", serif;
       color: #000;
       font-size: 30px;
+      margin-bottom: 0;
     }
     span {
       font-size: 20px;
       color: #000;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .checkout-page {
+    .total {
+      justify-content: flex-start;
+      align-items: center;
+      h2 {
+        font-size: 20px;
+      }
+      span {
+        font-size: 15px;
+      }
     }
   }
 }
