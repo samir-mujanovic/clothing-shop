@@ -22,3 +22,13 @@
     font-size: 10px;
   }
 }
+
+@media (max-width: 600px) {
+  .cart-icon {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    width: 25px;
+    margin: 0 auto;
+  }
+}

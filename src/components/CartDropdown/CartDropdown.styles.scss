@@ -31,3 +31,12 @@
     display: block;
   }
 }
+
+@media (max-width: 600px) {
+  .cart-dropdown {
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 105%;
+  }
+}
