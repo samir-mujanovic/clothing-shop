@@ -5,6 +5,7 @@ import { createStructuredSelector } from "reselect";
 import CheckoutItem from "../../components/CheckoutItem/CheckoutItem";
 import HeadingBlock from "../../components/HeadingBlock/HeadingBlock";
 import CustomButon from "../../components/CustomButton/CustomButton";
+import StripeButton from "../../components/StripeButton/StripeButton";
 
 import {
   selectCartItems,
@@ -56,6 +57,17 @@ const CheckoutPage = ({ cartItems, total }) => {
           <div className="total mt-5 d-flex align-items-center">
             <h2 className="mr-5">Cart Totals:</h2>
             <span>${total + ".00"}</span>
+          </div>
+          <div className="stripe-checkout d-flex align-items-center justify-content-start justify-content-md-end mt-5">
+            <StripeButton price={total + ".00"} />
+          </div>
+          <div
+            className="text-danger"
+            style={{ fontSize: "15px", textAlign: "left" }}
+          >
+            * Please use the following test credit card for payments *
+            <br />
+            4242 4242 4242 4242 - Exp: 01/20 - CVV: 123
           </div>
         </div>
       </div>
