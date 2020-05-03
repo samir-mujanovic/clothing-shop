@@ -12,10 +12,10 @@ import "./CartDropdown.styles.scss";
 
 const CartDropdown = ({ cartItems, history, dispatch }) => {
   return (
-    <div className="cart-dropdown">
+    <div className="cart-dropdown d-none d-md-block">
       <div className="cart-items">
         {cartItems.length ? (
-          cartItems.map(cartItem => (
+          cartItems.map((cartItem) => (
             <CartItem key={cartItem.id} item={cartItem} />
           ))
         ) : (
@@ -34,7 +34,7 @@ const CartDropdown = ({ cartItems, history, dispatch }) => {
 };
 
 const mapStateToProps = createStructuredSelector({
-  cartItems: selectCartItems
+  cartItems: selectCartItems,
 });
 
 export default withRouter(connect(mapStateToProps)(CartDropdown));
