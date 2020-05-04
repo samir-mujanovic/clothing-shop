@@ -13,7 +13,7 @@ const MenuItem = ({ title, imageUrl, history, linkUrl, match }) => {
       <div className="wrapper-box">
         <div
           style={{
-            backgroundImage: `url(${imageUrl})`
+            backgroundImage: `url(${imageUrl})`,
           }}
           className="hero-block"
         >

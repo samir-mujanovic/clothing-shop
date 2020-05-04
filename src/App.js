@@ -12,20 +12,22 @@ import Checkout from "./pages/checkout/checkout";
 
 import "./App.styles.scss";
 
-function App() {
-  return (
-    <div className="App">
-      <Navbar />
-      <Switch>
-        <Route exact path="/" component={Homepage} />
-        <Route path="/about" component={AboutUs} />
-        <Route path="/shop" component={Shop} />
-        <Route path="/contact" component={Contact} />
-        <Route exact path="/checkout" component={Checkout} />
-      </Switch>
-      <FooterSection />
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <div className="App">
+        <Navbar />
+        <Switch>
+          <Route exact path="/" component={Homepage} />
+          <Route path="/about" component={AboutUs} />
+          <Route path="/shop" component={Shop} />
+          <Route path="/contact" component={Contact} />
+          <Route exact path="/checkout" component={Checkout} />
+        </Switch>
+        <FooterSection />
+      </div>
+    );
+  }
 }
 
 export default App;
