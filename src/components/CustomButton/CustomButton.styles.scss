@@ -1,5 +1,5 @@
 .green-btn {
-  width: auto;
+  width: 170px;
   height: 46px;
   font-size: 12px;
   color: #fff;
@@ -8,7 +8,9 @@
   border-radius: 0;
   padding: 0 38px;
   text-transform: uppercase;
+  white-space: normal;
   transition: all 0.3s ease-out;
+  word-wrap: break-word;
   &:hover {
     color: #000;
     background-color: #fff;
